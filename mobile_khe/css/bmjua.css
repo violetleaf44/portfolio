@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/**/
+
+/*폰트경로 쓰고 한칸 띄고 format('woff');써줘야 한다.*/
+/*만들어서 쓰는 폰트여서 안될수 있음/ 안된경우 내부 스타일시트로 적용해보자*/
+
+
+@font-face {
+    font-family:'bmjua';/*이름 정하기*/
+    src: url('font/BMJUA.woff') format('woff');
+}

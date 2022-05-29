@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+html, body{
+    width: 100%;
+    height: 100%;
+   }
+
+/* 햄버거 메뉴*/
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+#ham_header{
+    width: 85%;
+    /* left: -99%; */
+    background: rgb(255, 240, 224);
+    z-index: 10000;
+    position: fixed;
+    height: 100%;
+    top: 0;  
+
+}
+
+#top_menu{
+
+   border: 1px solid red;
+   box-sizing: border-box;
+
+    font-size: 0.8rem;
+    text-align: center;
+  
+   
+}
+
+#top_menu> ul{
+    margin: 0 auto;
+    width: 96%;  
+ 
+  
+}
+
+#top_menu>ul> li{
+   height: 60px; 
+  background: rgb(255,225,208);
+  border-radius: 0.6rem;
+  border: 1px solid red;
+   box-sizing: border-box;
+  width: 23%;
+  display: inline-block; 
+}
+
+#top_menu>ul >li> a{
+   /* border: 1px solid red;
+   box-sizing: border-box; */
+    color: rgb(240, 123, 127);
+    display: block;
+}
+
+
+#top_menu li span{
+    display: block;
+ 
+}
+
+#crossx {
+    position: fixed;
+    width: 2rem;
+    z-index: 1000000;
+    top: 1.7rem;
+    right:-2.8rem;
+    position: absolute;
+}
+
+/* nav */
+
+#sub_m{
+z-index: 10000;
+
+}
+
+#sub_m a{
+    color: rgb(87,86,81);;
+}
+
+#sub_m .cbox1{
+    /* border: 1px solid red;
+    box-sizing: border-box;  */
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(255, 228, 212);
+}
+
+#sub_m .cbox1 > ul{
+    /* border: 1px solid blue;
+    box-sizing: border-box;  */
+    width: 95%;
+    height: 5rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 0.5rem;
+}
+.cbox1>ul>li{
+ /* border: 1px solid blue; */
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.7rem 0.5rem; 
+    position: relative;
+} 
+
+#sub_m .icon span{
+   /* border: 1px solid blue;
+    box-sizing: border-box;  */
+    display: block;
+    color: rgb(87,86,81);
+    margin-top: -0.2rem;   
+}
+
+.cbox1 .line1{
+    width: 2px;
+    height: 60px;
+    background: rgb(255, 203, 207);
+    position: absolute;
+    left: 4.2rem;
+    top: 0.6rem;
+}
+
+.subb{
+    /* border: 1px solid blue; */
+    box-sizing: border-box; 
+    width:68% ;
+    float: right;
+    text-align: left;
+    height: 5rem;
+    margin-top: 0.2rem;
+    position: absolute;
+    right: 0;
+    top: 0.3rem;
+}
+
+.subb li{
+     /* border: 1px solid blue;
+    box-sizing: border-box;  */
+ 
+    display: inline-block;
+    font-size: 0.6rem;
+}
+
+.subb li span{
+    /* border: 1px solid blue;  */
+    box-sizing: border-box; 
+    display:inline-block ;
+    padding: 0 0.4rem 0 0.7rem;
+    color: rgba(87,86,81, 0.5) ;
+}
+
+/* 서브2 */
+
+#sub_m .cbox2{
+     /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(255, 228, 212);
+    margin-top: 0.2rem;
+ 
+}
+#sub_m .cbox2 > ul{
+    /* border: 1px solid blue;
+    box-sizing: border-box; */
+    width: 95%;
+    height: 5rem;
+    margin: 0 auto;
+    position: relative;
+  
+}
+#sub_m .icon2{
+ /* border: 1px solid blue; */
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.6rem 0.5rem; 
+    position: relative;
+} 
+
+#sub_m .icon2 span{
+    /* border: 1px solid blue;
+    box-sizing: border-box; */
+    display: block;
+    color: rgb(87,86,81);
+    margin-top: -0.1rem;   
+}
+
+.cbox2 ul .line2{
+    width: 2px;
+    height: 65px;
+    background: rgb(255, 203, 207);
+    position: absolute;
+    left: 4.2rem;
+    top: 0.5rem;
+}
+
+.subb2{
+    /* border: 1px solid blue;
+    box-sizing: border-box; */
+    width:68% ;
+    float: right;
+    text-align: left;
+    height: 4rem;
+    margin-top: 0.2rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.2rem;
+
+}
+
+.subb2 li{
+    /* border: 1px solid blue;
+    box-sizing: border-box;  */
+ 
+    display: inline-block;
+    font-size: 0.6rem;
+}
+
+.subb2 li span{
+    /* border: 1px solid blue; */
+    box-sizing: border-box; 
+    display:inline-block ;
+    padding: 0 0.4rem 0 0.7rem;
+    color: rgba(87,86,81, 0.5) ;
+}
+
+/* 서브3 */
+
+#sub_m .cbox3{
+    /* border: 1px solid red; */
+   box-sizing: border-box;
+   width: 100%;
+   background: rgb(255, 228, 212);
+   margin-top: 0.2rem;
+}
+
+#sub_m .cbox3 > ul{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width: 95%;
+   height: 4.3rem;
+   margin: 0 auto;
+   position: relative;
+ 
+}
+#sub_m .icon3{
+/* border: 1px solid blue; */
+   box-sizing: border-box;
+   display: inline-block;
+   font-size: 0.8rem;
+   text-align: center;
+   padding: 0.3rem 0.5rem; 
+   position: relative;
+} 
+
+#sub_m .icon3 span{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   display: block;
+   color: rgb(87,86,81);
+   margin-top: 0.2rem;   
+}
+
+.cbox3 ul .line3{
+   width: 2px;
+   height: 55px;
+   background: rgb(255, 203, 207);
+   position: absolute;
+   left: 4.2rem;
+   top: 0.4rem;
+}
+
+.subb3{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width:68% ;
+   float: right;
+   text-align: left;
+   height: 4.3rem;
+   margin-top: 0.2rem;
+   position: absolute;
+   right: 0.1rem;
+   top: 0.3rem;
+}
+
+.subb3 li{
+   /* border: 1px solid blue;
+   box-sizing: border-box;  */
+
+   display: inline-block;
+   font-size: 0.6rem;
+}
+
+.subb3 li span{
+   /* border: 1px solid blue; */
+   box-sizing: border-box; 
+   display:inline-block ;
+   padding: 0 0.4rem 0 0.7rem;
+   color: rgba(87,86,81, 0.5) ;
+}
+
+/* 서브4 */
+
+#sub_m .cbox4{
+    /* border: 1px solid red; */
+   box-sizing: border-box;
+   width: 100%;
+   background: rgb(255, 228, 212);
+   margin-top: 0.2rem;
+}
+
+#sub_m .cbox4 > ul{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width: 95%;
+   height: 8rem;
+   margin: 0 auto;
+   position: relative;
+ 
+}
+#sub_m .icon4{
+/* border: 1px solid blue; */
+   box-sizing: border-box;
+   display: inline-block;
+   font-size: 0.8rem;
+   text-align: center;
+   padding: 2rem 0.5rem; 
+   position: relative;
+} 
+
+#sub_m .icon4 span{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   display: block;
+   color: rgb(87,86,81);
+   margin-top: 0.3rem;   
+}
+
+.cbox4 ul .line4{
+   width: 2px;
+   height: 110px;
+   background: rgb(255, 203, 207);
+   position: absolute;
+   left: 4.2rem;
+   top: 0.5rem;
+}
+
+.subb4{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width:68% ;
+   float: right;
+   text-align: left;
+   height: 9rem;
+   position: absolute;
+   right: 0.1rem;
+   top: 0.5rem;
+}
+
+.subb4 li{
+   /* border: 1px solid blue;
+   box-sizing: border-box;  */
+
+   display: inline-block;
+   font-size: 0.6rem;
+}
+
+.subb4 li span{
+   /* border: 1px solid blue; */
+   box-sizing: border-box; 
+   display:inline-block ;
+   padding: 0 0.4rem 0 0.7rem;
+   color: rgba(87,86,81, 0.5) ;
+}
+
+/* 서브5 */
+
+#sub_m .cbox5{
+    /* border: 1px solid red; */
+   box-sizing: border-box;
+   width: 100%;
+   background: rgb(255, 228, 212);
+   margin-top: 0.2rem;
+}
+
+#sub_m .cbox5 > ul{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width: 95%;
+   height: 5.5rem;
+   margin: 0 auto;
+   position: relative;
+ 
+}
+#sub_m .icon5{
+/* border: 1px solid blue; */
+   box-sizing: border-box;
+   display: inline-block;
+   font-size: 0.8rem;
+   text-align: center;
+   padding: 1rem 0.5rem; 
+   position: relative;
+} 
+
+#sub_m .icon5 span{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   display: block;
+   color: rgb(87,86,81);
+   margin-top: 0.3rem;   
+}
+
+.cbox5 ul .line5{
+   width: 2px;
+   height: 70px;
+   background: rgb(255, 203, 207);
+   position: absolute;
+   left: 4.2rem;
+   top: 0.5rem;
+}
+
+.subb5{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width:68% ;
+   float: right;
+   text-align: left;
+   height: 4.3rem;
+   margin-top: 0.2rem;
+   position: absolute;
+   right: 0.1rem;
+   top: 0.5rem;
+}
+
+.subb5 li{
+   /* border: 1px solid blue;
+   box-sizing: border-box;  */
+
+   display: inline-block;
+   font-size: 0.6rem;
+}
+
+.subb5 li span{
+   /* border: 1px solid blue; */
+   box-sizing: border-box; 
+   display:inline-block ;
+   padding: 0 0.4rem 0 0.7rem;
+   color: rgba(87,86,81, 0.5) ;
+}
+
+/* 서브6 */
+
+#sub_m .cbox6{
+    /* border: 1px solid red; */
+   box-sizing: border-box;
+   width: 100%;
+   background: rgb(255, 228, 212);
+   margin-top: 0.2rem;
+}
+
+#sub_m .cbox6 > ul{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width: 95%;
+   height: 5rem;
+   margin: 0 auto;
+   position: relative;
+ 
+}
+#sub_m .icon6{
+/* border: 1px solid blue; */
+   box-sizing: border-box;
+   display: inline-block;
+   font-size: 0.8rem;
+   text-align: center;
+   padding: 0.6rem 0.5rem; 
+   position: relative;
+} 
+
+#sub_m .icon6 span{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   display: block;
+   color: rgb(87,86,81);
+   margin-top: 0.3rem;   
+}
+
+.cbox6 ul .line6{
+   width: 2px;
+   height: 65px;
+   background: rgb(255, 203, 207);
+   position: absolute;
+   left: 4.2rem;
+   top: 0.5rem;
+}
+
+.subb6{
+   /* border: 1px solid blue;
+   box-sizing: border-box; */
+   width:68% ;
+   float: right;
+   text-align: left;
+   height: 4.3rem;
+   margin-top: 0.2rem;
+   position: absolute;
+   right: 0.1rem;
+   top: 0.8rem;
+}
+
+.subb6 li{
+   /* border: 1px solid blue;
+   box-sizing: border-box;  */
+
+   display: inline-block;
+   font-size: 0.6rem;
+}
+
+.subb6 li span{
+   /* border: 1px solid blue; */
+   box-sizing: border-box; 
+   display:inline-block ;
+   padding: 0 0.4rem 0 0.7rem;
+   color: rgba(87,86,81, 0.5) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

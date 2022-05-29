@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, crome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css"> 
+<link rel="stylesheet" href="css/okitchen_main.css"> 
+ <link rel="stylesheet" href="css/h_menu_1.css">  
+ <link rel="stylesheet" href="css/modal.css">  
+ <link rel="stylesheet" href="font/BMJUA.woff"> 
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/okitchen_main.js"></script>
+ <style>
+     @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+     body{font-family: 'Jua', sans-serif;}
+ </style>
+
+    <title>mobile_kitchen</title>
+</head>
+<body>
+
+
+
+    <!-- 메인 로고 -->
+   <header id="main_h">
+
+    <div id="full" class="cf">
+        <div class="htop_back">
+            <h1><a href="#"><img src="imgm/okitchen_logo.png" width="100" height="40" alt="logo"></a></h1>
+            <div class="ham_i">   
+            <span></span>
+            <span></span>
+            <span></span>
+            </div> 
+            <!-- <button>&#9776;</button> -->
+            <img class="main_ser" src="imgm/okitchen_search.png" width="30" height="30" alt="검색">
+        </div>
+    </div>
+    <!-- 검색창 -->
+       <form>
+            <fieldset>
+                <div class="fieldback">
+                <legend class="skip">검색창</legend>
+                <img class="ser_crox" src="imgm/x_button.png" width="29" height="29" alt="">
+                <input type="text" id="search_on" autofocus placeholder="오뚜기제품, 레시피검색">
+          
+
+                <div class="field_box">
+                    <ul class="ser_m">
+                        <li><a href="#">카레</a> <span>|</span></li>
+                        <li><a href="#">마요네즈</a> <span>|</span></li>
+                        <li><a href="#">분식</a> <span>|</span></li>
+                        <li><a href="#">브런치</a></li>
+                    </ul>
+
+                    <ul class="ser_mm">
+                        <li><a href="#">집밥</a> <span>|</span></li>
+                        <li><a href="#">치즈듬뿍</a> <span>|</span></li>
+                        <li><a href="#">캠핑</a> <span>|</span></li>
+                        <li><a href="#">요린이</a></li>
+                    </ul>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+   
+
+     
+ 
+<!-- 햄버거 메뉴 -->
+
+
+
+<header id="ham_header">
+    <div id="crossx" class="cf"><a href="#"><img src="imgm/hamx_button.png" width="30" height="30" alt="닫기버튼"></a></div>
+   
+    <div id="top_menu">
+        <ul>
+            <li class="ingi"><a href="#"><img src="imgm/ottogi_ingi.png" width="30" height="30" alt="인기레시피"><span>인기레시피</span></a></li>
+            <li class="tip"><a href="#"><img src="imgm/ottogi_tip.png" width="30" height="30" alt="인기레시피"><span>계량팁</span></a></li>
+            <li class="store"><a href="#"><img src="imgm/ottogi_store.png" width="30" height="30" alt="인기레시피"><span>오뚜기몰</span></a></li>
+            <li class="lately"><a href="#"><img src="imgm/ottogi_lately.png" width="30" height="30" alt="인기레시피"><span>최근 본</span></a></li>
+        </ul>
+    </div>
+
+<nav id="sub_m">
+    <div class="cbox1">
+    <ul class="cbox1_ul cf">
+        <li class="icon cf"><a href="#"><img src="imgm/ottogi_kind.png" width="40" height="40"  alt="종류"><span>종류</span></a></li>
+        <div class="line1"></div>
+    </ul>
+     <ul class="subb cf">
+        <li><a href="#"> 밥</a><span>|</span></li>
+        <li><a href="#"> 반찬</a><span>|</span></li>
+        <li><a href="#">국물</a><span>|</span></li>
+        <li><a href="#">면</a><span>|</span></li>
+        <li><a href="#">디저트</a><span>|</span></li>
+        <li class="do"><a href="#">분식</a><span>|</span></li>
+        <li class="do" ><a href="#">샐러드</a><span>|</span></li>
+        <li class="do"><a href="#">음료</a><span>|</span></li>
+        <li class="do"><a href="#">기타</a></li>
+     </ul>
+</div>
+
+    <div class="cbox2">
+    <ul class="cbox2_ul cf">
+        <li class="icon2 cf"><a href="#"><img src="imgm/ottogi_stuff.png" width="40" height="40" alt="재료"><span>재료</span></a></li>
+    </ul>
+        <div class="line2"></div>
+       <ul class="subb2">
+        <li><a href="#">쇠고기</a><span>|</span></li>
+        <li><a href="#">돼지고기</a><span>|</span></li>
+        <li><a href="#">닭고기</a><span>|</span></li>
+        <li><a href="#">해물</a><span>|</span></li>
+        <li class="do1"><a href="#">채소</a><span>|</span></li>
+        <li class="do1"><a href="#">계란</a><span>|</span></li>
+        <li class="do1"><a href="#">유제품</a><span>|</span></li>
+        <li class="do1"><a href="#">기타</a></li>
+      </ul>
+</div>
+
+<div class="cbox3">
+    <ul class="cbox3_ul cf">
+        <li class="icon3 cf"><a href="#"><img src="imgm/ottogi_way.png" width="40" height="40"  alt="방법"><span>방법</span></a></li>
+    </ul>
+        <div class="line3"></div>
+       <ul class="subb3">
+        <li><a href="#">구이</a><span>|</span></li>
+        <li><a href="#">찜</a><span>|</span></li>
+        <li><a href="#">국탕찌개</a><span>|</span></li>
+        <li><a href="#">볶음</a><span>|</span></li>
+        <li class="do3"><a href="#">조림</a><span>|</span></li>
+        <li class="do3"><a href="#">튀김</a><span>|</span></li>
+        <li class="do3"><a href="#">무침.비빔</a><span>|</span></li>
+        <li class="do3"><a href="#">기타</a></li>
+    </ul>
+ 
+</div>
+
+<div class="cbox4">
+    <ul class="cbox4_ul cf">
+        <li class="icon4 cf"><a href="#"><img src="imgm/ottogi_theme.png" width="45" height="45"  alt="테마"><span>테마</span></a></li>
+    </ul>
+        <div class="line4"></div>
+      <ul class="subb4">
+        <li><a href="#">스피드</a><span>|</span></li>
+        <li><a href="#">야식</a><span>|</span></li>
+        <li><a href="#">간식</a><span>|</span></li>
+        <li><a href="#">브런치</a><span>|</span></li>
+        <li><a href="#">캠핑</a><span>|</span></li>
+        <li><a href="#">도시락</a><span>|</span></li>
+        <li><a href="#">파티</a><span>|</span></li>
+        <li><a href="#">해장</a><span>|</span></li>
+        <li><a href="#">1인분</a><span>|</span></li>
+        <li><a href="#">키즈셰프</a><span>|</span></li>
+        <li><a href="#">채식</a><span>|</span></li>
+        <li><a href="#">셰프의팁</a><span>|</span></li>
+      
+    </ul>
+ 
+</div>
+
+<div class="cbox5">
+    <ul class="cbox5_ul cf">
+        <li class="icon5 cf"><a href="#"><img src="imgm/ottogi_Anniversary.png" width="40" height="40" alt="기념일"><span>기념일</span></span></li>
+        </ul>
+        <div class="line5"></div>
+        <ul class="subb5">
+        <li><a href="#">명절</a><span>|</span></li>
+        <li><a href="#">생일</a><span>|</span></li>
+        <li><a href="#">크리스마스</a><span>|</span></li>
+        <li><a href="#">발렌타인데이</a><span>|</span></li>
+        <li><a href="#">화이트데이</a><span>|</span></li>
+        <li><a href="#">결혼기념일</a></li>
+    </ul>
+ 
+</div>
+
+<div class="cbox6">
+    <ul class="cbox6_ul cf">
+        <li class="icon6 cf"><a href="#"><img src="imgm/ottogi_tool.png" width="40" height="40" alt="도구"><span>도구</span></a></li>
+    </ul>
+        <div class="line6"></div>
+       <ul class="subb6">
+        <li><a href="#">에어프라이어</a><span>|</span></li>
+        <li><a href="#">후라이팬</a><span>|</span></li>
+        <li><a href="#">전자레인지</a><span>|</span></li>
+        <li><a href="#">냄비</a><span>|</span></li>
+        <li><a href="#">오븐</a><span>|</span></li>
+        <li><a href="#">기타</a></li>
+    </ul>
+   
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+
+
+<!-- 메인 배너 이미지 -->
+
+
+  <div id="art_ban">
+
+        <ul class="bain cf">
+            <li><img src="imgm/mobile_fresco_bold.jpg" alt="프레스코"></li>
+               <li><img src="imgm/mobile_chobo6.jpg" alt="초보레시피"></li>
+               <li><img src="imgm/mobile_speed.jpg" alt="스피드레시피"></li>
+               <li><img src="imgm/mobile_library_H.jpg" alt="라이브러리H"></li>
+           </ul>
+        <div id="arr">
+            <a class="ba_l" href="#">prev</a>
+            <a class="go_r" href="#">next</a>
+        </div>
+
+        <div id="rou">
+            <div class="set_on"></div>
+            <div class="set_off"></div>
+            <div class="set_off"></div>
+            <div class="set_off"></div>
+        </div>
+
+        </div> 
+     
+
+        <!-- 추천레시피 -->
+
+         <section id="se_section" class="cf">
+
+            <h2>추천 레시피</h2>  
+       
+            <div class="se_box"> 
+
+              
+              <div class="arr2">         
+                <a class="ba_l2" href="#">prev</a>
+                <a class="go_r2" href="#">next</a>
+            </div>
+         
+            <div class="sugg_bo cf">
+                <ul class="sugg cf">                 
+                    <li><a href="#"><img src="imgm/eggmayo2.jpg" alt="에그마요샌드위치"> <span>에그마요 샌드위치</span></a></li>
+
+                    <li><a href="#"><img src="imgm/currybeef02.jpg" alt="카레 비프 스튜"> <span>카레비프 스튜</span></a></li>
+                    
+                    <li><a href="#"><img src="imgm/eggmayo2.jpg" alt="에그마요샌드위치"> <span>에그마요 샌드위치</span></a></li>
+
+                    <li><a href="#"><img src="imgm/currybeef02.jpg" alt="카레 비프 스튜"> <span>카레비프 스튜</span></a></li>
+                    
+                    <li><a href="#"><img src="imgm/eggmayo2.jpg" alt="에그마요샌드위치"> <span>에그마요 샌드위치</span></a></li>
+
+                    <li><a href="#"><img src="imgm/currybeef02.jpg" alt="카레 비프 스튜"> <span>카레비프 스튜</span></a></li> 
+                </ul>
+            </div>
+            
+
+            </div> 
+        
+          </section> 
+
+<!-- 셰프팁 -->
+
+       <section class="s_tip">
+            <a class="cf"  href="#">
+             <div class="tip_in">
+                <img src="imgm/mobile_chef_tip02.jpg" alt="셰프의 팁"> 
+              </div>
+           <div class="tip_text cf">           
+            <p class="te1">오뚜기 간편식이</p>
+            <p class="tel">요리가 되는 팁!</p>
+            <p class="te2">요리의 업그레이드</p>
+            <p class="te3">셰프의 팁!</p>
+        </div>
+        </a>
+        <div>
+        </section>
+
+
+        <!-- 인기 레시피 -->
+
+        <section class="popularity">
+            <div id="popuoff" class="cf">
+            <h2>인기 레시피</h2>
+            <div class="popu_see">
+                <a href="#">
+                    <span class="seetext">더보기</span>
+                    <span class="see"></span>
+               
+                </a>
+            </div>
+        </div>
+        <div class="popudiv">
+
+            <ul class="popuul">
+                <li><a href="#"><img src="imgm/walnut_garlic01.jpg" alt="호두마늘볶음"> <span>호두 마늘 볶음</span></a></li>
+                <li><a href="#"><img src="imgm/tomato01.jpg" alt="토마토 냉파스타"> <span>토마토 냉파스타</span></a></li>
+                <li><a href="#"><img src="imgm/chicken01.jpg" alt="치킨카레타코"> <span>치킨 카레 타코</span></a></li>
+                <li><a href="#"><img src="imgm/corn01.jpg" alt="옥수수전"> <span>옥수수전</span></a></li>
+                <li><a href="#"><img src="imgm/hammayo01.jpg" alt="햄마요 덮밥"> <span>햄마요 덮밥</span></a></li>
+                <li><a href="#"><img src="imgm/whelk.jpg" alt="골뱅이 야채초무침"> <span>골뱅이 야채 초무침</span></a></li>
+            </ul>
+        </div>
+        </section> 
+
+
+    <!-- 키즈셰프 레시피 -->
+
+ <section id="kids">
+    <h2>키즈셰프 레시피</h2>
+    <div class="kidstop">
+        <div class="arr3">         
+            <a class="ba_l3" href="#">prev</a>
+            <a class="go_r3" href="#">next</a>
+        </div>
+        
+        <div class="kiddiv">
+            <ul class="kidul"> 
+                <li><a href="#"><img src="imgm/halla.jpg" alt="한라산볶음밥"> <span>한라산 볶음밥</span> </a></li>
+                <li><a href="#"><img src="imgm/crab sushi01.jpg" alt="게살유부초밥"> <span>게살유부 초밥</span> </a></li> 
+                 <!-- <li><a href="#"><img src="imgm/hammusubi01.jpg" alt="햄무스비"> <span>햄무스비</span> </a></li>
+                <li><a href="#"><img src="imgm/hotdog01.jpg" alt="라면땅핫도그"> <span>라면땅 핫도그</span> </a></li> --> 
+           </ul>
+        </div>
+    </div>
+</section>  
+
+
+ <!-- 오뚜기몰 -->
+
+ <div id="ottogi_more">
+    <a href="#">
+        <img src="imgm/ottogi_banner02.jpg"  alt="오뚜기몰">
+      
+    <div class="moretext">
+        <p>오뚜기몰  <span>엔</span>  </p>       
+        <p>다~<span>있다!</span> </p> 
+        <p>오뚜기몰 가기</p>
+    </div>
+    </a>
+</div> 
+
+
+
+<!-- footer -->
+
+<footer>
+    <div class="footerdiv">
+        <ul>
+            <li><a href="#">(주)오뚜기</a></li>
+            <li><a href="#">오뚜기몰</a></li>
+            <li><a href="#">오뚜기함태호재단</a></li>
+        </ul>
+    </div>
+
+    <div class="addr">
+        <ul>
+            <li>(주)오뚜기</li>
+            <li>경기도 안양시 동안구 흥안대로 405</li>
+        </ul>
+
+        <ul class="sns">
+            <li><a href="#"><img src="imgm/insta.png" width="40" height="40" alt="인스타"></a></li>
+            <li><a href="#"><img src="imgm/fabook.png" width="40" height="40" alt="페이스북"></a></li>
+            <li><a href="#"><img src="imgm/blog.png" width="50" height="40" alt="블로그"></a></li>
+        </ul>
+        <small>Copyright &copy; ottogi co.,Ltd All Rights Reserved.</small>
+    </div>
+  
+
+</footer>
+
+  
+    
+
+
+    
+           
+
+
+
+
+
+
+
+
+</body>
+</html> 
