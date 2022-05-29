@@ -1,0 +1,196 @@
+
+@font-face {
+    font-family: 'KoPubDotumM';/*이름 정하기*/
+    src: url('../font/KoPubDotumM.woff') format('woff');
+}
+@font-face {
+    font-family: 'KoPubDotumBold';/*이름 정하기*/
+    src: url('../font/KoPubDotumBold.woff') format('woff');
+}
+
+body{
+    font-family: 'KoPubDotumBold', Arial ;
+    background: white;
+}
+p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #777;
+    /* line-height: 1.6; */
+}
+h3{
+    font-family: 'KoPubDotumBold', Arial ;
+    color: #333;
+}
+h4{
+    font-family: 'KoPubDotumBold', Arial ;
+    color: #333;
+}
+.line{
+    display: block;
+   border-bottom: 2.1px solid #555;
+   position: relative;
+   top: 0.3rem;
+}
+
+.back{
+    width: 100%;
+    background: #555;
+    height: 40px;
+
+}
+.head{
+    padding: 1.5rem 0 5rem 0;
+    width: 900px;
+    /* border: 1px solid rgb(32, 255, 244); */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.head h1{
+    color: #333;
+    text-align: center;
+}
+.box{
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    width: 900px;
+    margin: 0 auto;
+    height: 400px;
+}
+.left{
+    width: 49%;
+    float: left;
+    text-align: center; 
+}
+.left >h3{
+    box-sizing: border-box;
+    width: 60%;
+    font-size: 1.3rem;
+}
+.left> .profile_img{
+    /* background: url(../img/haeun.jpg)no-repeat top center ; */
+    width: 60%;
+    height: 280px;
+    position: relative;
+    top: 2rem;
+}
+.left > p > img{
+    width: 100%; 
+}
+.right{
+    float: left;
+    width: 49%;
+    height: 50%;
+}
+
+/* 오른쪽 */
+.right >ul{
+    width: 90%;
+    position: relative;
+    left: 1.5rem;
+    top: 1.8rem
+}
+.right > ul > li{
+    width: 100%;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+.right> ul > li > h4{
+    /* border: 1px solid blue; */
+    width: 13.8%;
+    margin: 0 0 0.5rem 0.5rem;
+    text-align: center;
+}
+.right > ul > li > p{
+ padding-top: 0.5rem;
+ box-sizing: border-box;
+ text-indent: 0.8rem;
+}
+.right > ul > li > p:nth-child(1){
+   position: absolute;
+   top: 2rem;
+}
+
+/* //// */
+
+.portfolio{
+    /* border: 1px solid red; */
+    width: 900px;
+    margin: 4rem auto 2.5rem auto;
+  
+}
+.portfolio > h3{
+    width: 11%;
+    text-align: center;
+    margin: 0 auto;
+}
+.table_box{
+    width: 900px;
+    margin: 0 auto;  
+}
+.table_box > table {
+    margin: 0 auto;
+    width: 78%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.table_box > table th{
+    color: #555;
+}
+.border{
+    border-top: 1px solid #999;
+}
+.t_padding1{
+   padding-top: 1rem;
+}
+.t_padding2{
+    padding-top: 2rem!important;
+}
+.t_padding3{
+    padding-bottom: 2rem!important;
+}
+.table_box > table td> a{
+    display: block;
+    color: #999;
+    text-decoration: none;
+}
+
+.table_box > table td{
+    padding: 1rem 0 1rem 2rem ;
+    color: #555;
+}
+
+footer{
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 60px;
+    background: #222;
+}
+.footer{
+    width: 900px;
+    margin: 0 auto;
+    line-height: 60px;
+
+}
+.footer > small{
+    width: 48.5%;
+    float: left;
+    color: whitesmoke;
+}
+.footer > small:last-child{
+    text-align: right;
+    margin-left: 1rem;
+}
+tr td a{
+    transition: all 0.4s ease-in;
+}
+tr td a:hover{
+    color: rgb(209, 20, 99);
+    text-decoration: underline;
+}
+
+
+
+
+
