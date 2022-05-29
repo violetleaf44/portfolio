@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* <span class mouse> */
+
+
+
+.scrolldown {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    z-index: 10;
+    transition: all .4s cubic-bezier(.25,.46,.45,.94);
+}
+
+
+.scrolldown .mouse:before {
+    background: #fff;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: .4em;
+    height: .4em;
+    border-radius: 50%;
+    top: .8em;
+    animation: mousescrolldown 2s infinite forwards;
+}
