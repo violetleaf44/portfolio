@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/rwd_dipyque.css">
+    <link rel="stylesheet" href="css/dip_ani.css">
+    <link rel="stylesheet" href="font/KoPubDotumM.woff">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/dipyque.js"></script>
+    <script src="js/tablet_banner.js"></script>
+    <script src="js/pc_banner.js"></script>
+
+    <!-- <link rel="stylesheet" href="font/KoPubDotumM.woff2"> -->
+    <!-- <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css'>  -->
+
+    <!-- <link rel="shortcut icon" href="../image/hapa2x16.ico"> 파비콘 넣을때  -->
+
+
+                                                     <!-- prefix:접두사 
+                                            / 접두사 붙여서 실행 되도록 한다. 
+                                        -webkit-: 크롬, 사파리
+                                        (사파리가 거의 안됨)
+                                        -o-:오페라
+                                        -moz-:파이어폭스
+                                        -ms-:익스플로러 -->
+
+    <title>diptyque</title>
+</head>
+<body>
+    <div class="modal"></div>
+   <!-- 모바일 배너 -->
+    <div class="backbanner_ul"> 
+        <img class="mo_active" src="dipimg/mobile_banner02_1300x2000.jpg" alt="배너1">
+        <img src="dipimg/mobile_banner03_1300x2000.jpg" alt="배너2">
+        <img src="dipimg/mobile_banner04-1300x2000.jpg" alt="배너3">
+        <img src="dipimg/mobile_banner06-1300x2000.jpg" alt="배너4">
+       </div>
+
+       <!-- 태블릿 배너 -->
+       <div class="tablet_backbanner_ul">  
+        <img class="tablet_active" src="dipimg/tablet_banner01_2000x2400.jpg" alt="배너1">
+        <img src="dipimg/tablet_banner02_2000x2400.jpg" alt="배너2">
+        <img src="dipimg/tablet_banner03_2000x2400.jpg" alt="배너3">
+        <img src="dipimg/tablet_banner04_2000x2400.jpg" alt="배너4">
+       </div>
+
+      <!-- pc -->
+      <div class="pc_backbanner_ul">  
+        <img class="pc_active" src="dipimg/main_banner05_1.jpg" alt="배너1">
+        <img src="dipimg/main_banner02_1.jpg" alt="배너2">
+        <img src="dipimg/main_banner03_1.jpg" alt="배너3">
+        <img src="dipimg/main_banner04_1.jpg" alt="배너4">
+       </div>
+
+
+
+    <header>  
+    <div class="fixe">
+        <div class="h1">
+         <h1>
+             <a href="#">
+                 <img src="dipimg/dipyque_logo02-2_122x56.png" alt="logo">
+            </a>
+        </h1>
+        </div>
+
+        <!-- 스크롤 다운 로고 -->
+        <div class="h1-2">
+            <h1>
+                <a href="#">
+                    <img src="dipimg/dipyque_logow_122x56.png" alt="logo">
+               </a>
+           </h1>
+           </div>
+           <!-- ------------------------- -->
+     
+        <div class="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- 메뉴 아이콘 -->
+        <div class="head_right cf">
+            <div class="right_ul cf">
+                <div class="mser_img cf">
+                    <a href="#"><img src="dipimg/icon_ser_30x30.png" width="16" height="16" alt="검색"></a>
+                </div>
+
+                <div class="ic_log">
+                    <a href="dip_log.html"><img src="dipimg/icon_login_30x30.png" width="16" height="16" alt="로그인"></a>
+                    
+                </div>
+
+                <div class="ic_item">
+                    <a href="#"><img src="dipimg/icon_Interested items_30x30.png" width="16" height="16" alt="관심상품리스트"></a>
+                </div>   
+
+                <div class="ic_market">
+                    <a href="#"><img src="dipimg/icon_market_30x30.png" width="16" height="16" alt="장바구니"></a>
+                </div>
+            </div>   <!-- right_ul end -->
+        </div><!-- head_right end -->
+     </div><!-- fixe end -->
+
+
+        <!-- 스크롤 다운 아이콘 -->
+     <div class="head_right2 cf">
+        <div class="right_ul2 cf">
+            <div class="mser_img2 cf">
+                <a href="#"><img src="dipimg/iconw_ser_30x30.png" width="16" height="16" alt="검색"></a>
+            </div>
+
+            <div class="ic_log2">
+                <a href="dip_log.html"><img src="dipimg/iconw_login_30x30.png" width="16" height="16" alt="로그인"></a>
+                
+            </div>
+
+            <div class="ic_item2">
+                <a href="#"><img src="dipimg/iconw_Interested items_30x30.png" width="16" height="16" alt="관심상품리스트"></a>
+            </div>   
+
+            <div class="ic_market2">
+                <a href="#"><img src="dipimg/iconw_market_30x30.png" width="16" height="16" alt="장바구니"></a>
+            </div>
+        </div>   <!-- right_ul end -->
+    </div><!-- head_right end -->
+ </div><!-- fixe end -->
+ <!-- ------------------------ -->
+
+      
+   <!-- 관심상품 리스트 -->      
+     <div class="item_box">
+        <div class="item_cr">
+            <button class="item_cross">&#735;</button>
+         </div>
+     
+        <h5>관심상품 리스트</h5>
+
+        <div class="item_in">
+            <div class="item_bb">
+            <div class="item_img">
+                <a  href="#"><img src="dipimg/figuier_can.jpg" alt="휘기에캔들"></a>
+            </div>
+
+            <div class=" item_txt">
+                <a href="#">휘기에 캔들</a>
+               <p>200g 수량 : 1 <span>￦95,000</span></p>
+            </div>
+        </div>
+    </div>
+        <div class="item_a">
+            <a href="#">장바구니 담기</a>
+        </div>   
+        <div class="it_btn">
+            <button>관심상품 리스트보기</button>     
+        </div>
+  </div>
+
+
+    <!-- 장바구니 -->
+    <div class="mob_market">
+        <div class="market_cr">
+            <button class="market_cross">&#735;</button>
+        </div>
+        <h5>장바구니</h5>
+        <p class="mo_mar">장바구니가 비어있습니다</p>
+    </div>   
+            
+               
+
+    <!-- 메뉴 - 모바일 태블릿 -->
+    <nav id="mobi_menu">
+    
+        <ul class="top_menu cf">
+            <li><a href="#">ABOUT</a></li>
+            <li class="bigfont"><a href="#">향수<img  class="btn" src="dipimg/icon_hamopen.png" width="20" height="20"  alt="열기"></a>
+
+            <ul class="sub">
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  
+                width="10" height="10" alt="아이콘">오 드 퍼퓸</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png" width="10" height="10" alt="아이콘">오 드 뚜왈렛</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png" width="10" height="10" alt="아이콘">고체 향수</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png" width="10" height="10" alt="아이콘">여행용 스프레이</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png" width="10" height="10" alt="아이콘">컬렉션</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png" width="10" height="10" alt="아이콘">하이라이트</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="bigfont"><a href="#">캔들 <img  class="btn" src="dipimg/icon_hamopen.png" width="20" height="20"  alt="열기"></a>
+            
+            <ul class="sub">
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">르 그랑 투어</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">리미티드 에디션</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">기프트 세트</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">컬렉션</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">하이라이트</a></li>
+                </ul>
+        </li>
+
+        <li class="bigfont"><a href="#">바디 <img  class="btn" src="dipimg/icon_hamopen.png" width="20" height="20"  alt="열기"></a>
+            <ul class="sub">
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">바디케어</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">센티드 바디케어</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">핸드케어</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">센티드 케어</a></li>
+                <li><a href="#"><img src="dipimg/icon_menufront.png"  width="10" height="10" alt="아이콘">스킨케어</a></li>
+            </ul>
+        </li>
+        <li class="bigfont"><a href="#">관심 상품리스트</a></li>
+        <li class="bigfont"><a href="#">장바구니</a></li>
+    </ul>
+    <button class="mobi_cross">&#735;</button>
+    </nav>
+
+
+     <!-- pc메뉴 -->
+   <nav id="pc_menu">  
+    <!-- <div class="ab"><a href="#">ABOUT</a></div>  -->
+    <ul id="pcmenu_ul" class="cf">
+        <li class="pc_main0"><a href="">About</a></li>
+        <li class="pc_main1"><a href="">향수</a>
+        <div class="mb">
+        <div class="mbox cf">
+            <div class="mimg1">
+                <img src="dipimg/menu_back01_700x350.png" alt="메뉴">
+            </div> 
+        
+            <div class="pc_ul pchover1">
+                <span class="pc_line"></span>
+                    <ul class="ps1">
+                        <li class="pc_color">향수 </li>
+                        <li><a href="#">오드퍼퓸</a></li>
+                        <li><a href="#">오드뚜왈렛</a></li>
+                        <li><a href="#">고체향수</a></li>
+                        <li><a href="#">여행용 스프레이</a></li>
+                    </ul>
+                    <ul class="ps2">
+                    <li>컬렉션</li>
+                    <li><a href="#">베니스</a></li>
+                    <li><a href="#">오데썽</a></li>
+                    <li><a href="#">도손</a></li>
+                    <li><a href="#">롬브르 단 로</a></li>
+                    <li><a href="#">필로시코스</a></li>
+                    <li><a href="#">오로즈</a></li>
+                    <li><a href="#">탐다오</a></li>
+                    <li><a href="#">플레르 드 뽀</a></li>
+                </ul>
+                <ul class="ps2">
+                    <li>하이라이트</li>
+                    <li><a href="#">베스트 셀러</a></li>
+                    <li><a href="#">기프트 세트</a></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </li>
+
+        <li class="pc_main2"><a href="">캔들</a>
+            <div class="mb mb2">
+            <div class="mbox cf">
+                <div class="mimg1">
+                    <img src="dipimg/menu_back02_700x350.png" alt="메뉴">
+                </div> 
+            
+                <div class="pc_ul pchover2">
+                    <span class="pc_line2"></span>
+                    <ul class="ps1">
+                        <li>캔들</li>
+                        <li><a href="#">르그랑투어</a></li>
+                        <li><a href="#">리미티드에디션</a></li>
+                        <li><a href="#">기프트세트</a></li>
+                    </ul>
+                    <ul class="ps2">
+                    <li>컬렉션</li>
+                    <li><a href="#">베니스</a></li>
+                    <li><a href="#">파리</a></li>
+                    <li><a href="#">비블로스</a></li>
+                    <li><a href="#">퍼 드 부아</a></li>
+                    <li><a href="#">튜베로즈</a></li>
+                    <li><a href="#">로즈</a></li>
+                </ul>
+                <ul class="ps2">
+                    <li>하이라이트</li>
+                    <li><a href="#">베스트 셀러</a></li>
+                    <li><a href="#">기프트 세트</a></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </li>
+    
+        <li class="pc_main3"><a href="">바디</a>
+        <div class="mb mb3">
+        <div class="mbox">
+            <div class="mimg1">
+                <img src="dipimg/menu_back03_700x350.png" alt="메뉴">
+            </div> 
+        
+            <div class="pc_ul pchover3">
+                <span class="pc_line3"></span>
+                <ul class="ps1">
+                    <li>아트 오브 케어</li>
+                    <li><a href="#">바디케어</a></li>
+                    <li><a href="#">센티드 바디케어</a></li>
+                    <li><a href="#">핸드케어</a></li>
+                </ul>
+                <ul class="ps2">
+                <li>센티드 케어</li>
+                <li><a href="#">도손</a></li>
+                <li><a href="#">오로즈</a></li>
+                <li><a href="#">오데썽</a></li>
+                <li><a href="#">롬브르 단 로</a></li>
+                <li><a href="#">필로시코스</a></li>
+                <li><a href="#">탐다오</a></li>
+                <li><a href="#">플레르 드 뽀</a></li>
+            </ul>
+            <ul class="ps2">
+                <li>스킨케어</li>
+                <li><a href="#">클렌징</a></li>
+                <li><a href="#">각질 제거</a></li>
+                <li><a href="#">보습</a></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </li> 
+   </ul>
+  </nav> 
+    
+
+     <!-- 검색 -->
+     <div class="mob_form">
+      <div class="cro_box">
+        <button class="ser_cross">&#735;</button>
+     </div>
+     
+    <div class="back_box">
+      <div class="di_input">
+         <input type="text" id="dipser" name="serch" autofocus placeholder="찾으시는 상품을 입력하여 주세요.">
+         <p>도움이 필요하세요?</p>
+      </div>
+
+        <!-- 꺽쇠 -->
+        <div class="ser_btn">
+            <a class="a1" href="#"></a>
+            <a class="a2" href="#"></a>
+        </div> <!-- 꺽쇠 edn -->
+
+        <div class="mser_top">
+            <div class="mser_ul cf">
+
+            <div class="mborder_li">
+                <a href="#">기프트 세트</a>
+            </div>
+
+            <div class="mborder_li">
+                <a href="#">향수</a> 
+            </div>
+
+            <div class="mborder_li">
+                <a href="#">바디</a> 
+            </div>
+
+            <div class="mborder_li">
+                <a href="#">캔들</a> 
+            </div>
+
+            <div class="mborder_li">
+                <a href="#">그녀를 위한 선물</a> 
+            </div>
+
+            <div class="mborder_li">
+                <a href="#">그를 위한 선물</a> 
+            </div>
+        </div>
+    </div> <!-- mser_top end -->
+    </div><!--back_box end -->
+  </div> <!-- mob_form end -->
+</header>
+
+
+
+    <!-- 모바일 스타일가이드 -->
+   <section class="section1">
+       <div class="scrat_box">
+         <div class="scrat_txt wp2">
+           <h1>diptyque IN THE SCRAT</h1>
+           <p>유니크하고 가치 있는 diptyque의 비주얼 스타일 가이드</p>
+       </div>
+       
+    <div class="scrat_img">
+        <a href="#"></a>
+        <div class="blue_txt delay-05s wp1">
+        <p>raw materials</p>
+        <p>are to perfume</p>
+        <p>what colours</p>
+        <p>are to painting</p>
+        </div> 
+    </div>
+  
+    </div>
+    <article class="visual_article">
+        <ul class="cf">
+            <li>
+                <a href="#"><img src="dipimg/visual05_01.jpg" alt="스타일가이드"></a>
+                <div class="vi_in1 wp3">
+                    <span>raw materials <br> are to perfume <br> what colours <br>
+                 are to painting</span>
+                </div>
+            </li>
+
+            <li>
+                <a href="#"><img src="dipimg/visual03_01.jpg" alt="스타일가이드"></a>
+                <div class="vi_in2 delay-05s wp4">
+                    <span>raw materials <br> are to perfume <br> what colours <br>
+                 are to painting</span>
+                </div>
+            </li>
+
+            <li>
+                <a href="#"><img src="dipimg/visual02_01.jpg" alt="스타일가이드"></a>
+             <div class="vi_in3 delay-05s wp5">
+                <span>raw materials <br> are to perfume <br> what colours <br> are to painting</span>
+            </div>
+            </li>
+
+            <li>
+              <a href="#"><img src="dipimg/visual04_01.jpg" alt="스타일가이드"></a>
+                <div class="vi_in4 delay-05s wp6">
+                    <span>raw materials <br> are to perfume <br> what colours <br>
+                are to painting</span>
+            </div>
+       </li>       
+        </ul>
+    </article> 
+</section>
+
+
+<!-- pc 태블릿 스타일 가이드 -->
+<section class="table_section">
+    <article class="table_artbox">
+      <div class="tabscrat_txt wp2 delay-1s">
+        <h1>diptyque IN THE SCRAT</h1>
+        <p>유니크하고 가치 있는 diptyque의 비주얼 스타일 가이드</p>
+     </div>
+    
+     <div class="tabscrat_img">
+      <a href="#"></a>
+      <div class="tabblue_txt delay-3s wp1">
+         <p>raw materials</p>
+         <p>are to perfume</p>
+         <p>what colours</p>
+         <p>are to painting</p>
+      </div> 
+     </div>
+    </article>
+
+ <article class="tabvisual_article">
+     <div class="table_ul cf">
+         <div class="table_li">
+             <a href="#"></a>
+                 <!-- <img src="dipimg/visual05_01.jpg" alt="스타일가이드"> -->
+             <div class="table_vi_in1 delay-3s wp3">
+                 <span>raw materials <br> are to perfume <br> what colours <br>
+              are to painting</span>
+             </div>
+          </div>
+
+         <div class="table_li">
+             <a href="#"></a>
+                 <!-- <img src="dipimg/visual03_01.jpg" alt="스타일가이드"> -->
+             
+             <div class="table_vi_in2 delay-3s wp4">
+                 <span>raw materials <br> are to perfume <br> what colours <br>
+              are to painting</span>
+             </div>
+        </div>
+
+         <div class="table_li">
+             <a href="#"></a>
+                 <!-- <img src="dipimg/visual02_01.jpg" alt="스타일가이드"> -->
+              
+            <div class="table_vi_in3 delay-3s wp5">
+                <span>raw materials <br> are to perfume <br> what colours <br> are to painting</span>
+            </div>
+        </div>
+
+        <div class="table_li">
+           <a href="#"></a>
+               <!-- <img src="dipimg/visual04_01.jpg" alt="스타일가이드"> -->
+           
+                <div class="table_vi_in4 delay-3s wp6">
+                    <span>raw materials <br> are to perfume <br> what colours <br>
+                are to painting</span>
+                </div>
+       </div>       
+     </div>
+ </article> 
+</section>
+
+
+<!-- 영상 -->
+<article class="vio">
+    <div class="vio_line2"></div>
+    <div class="vio_in">
+     
+        <video class="myvideo" width="300" height="200" autoplay loop muted >
+            <source src="dipimg/dipyque_1080p.mp4" type="video/mp4">
+        </video>
+       <div class="vio_linebox"> <div class="vio_line"></div></div>
+    </div>
+ </article>
+ <div class="vio_line3"></div> 
+ 
+
+<!-- 2 영상 -->
+<article class="vio_m2">
+    <div class="vio_line2_m2"></div>
+    <div class="vio_in_m2">
+        <video class="myvideo2" width="470" height="370" autoplay loop muted >
+            <source src="dipimg/dipyque_1080p.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="vio_linebox_m2"> <div class="vio_line_m2"></div></div>
+
+ </article>
+ <div class="vio_line3_m2"></div> 
+
+ <!-- 3 영상 -->
+<article class="vio_m3">
+  
+    <div class="vio_in_m3">
+        <video class="myvideo3" width="570" height="370" autoplay loop muted >
+            <source src="dipimg/dipyque_1080p.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="vio_linebox_m3"> <div class="vio_line_m3"></div></div>
+
+ </article>
+ <div class="vio_line2_m3"></div>
+ <div class="vio_line3_m3"></div>
+
+
+<!-- 모바일 태블릿 리미티드 -->
+ <article class="lite">
+     <h3>LIMITED EDITIONS</h3>
+    <div class="lite_div">
+      <a href="#"></a>
+    </div>
+    <div class="lite_span">
+        <span>Le Grand Tour</span>
+    </div>
+ </article>
+
+ <!--  태블릿 리미티드추가 -->
+ <section class="tablet_litesection cf">
+    <article class="kyoto">
+       <div class="kyoto_div">
+         <a href="#"></a>
+       </div>
+       <div class="kyoto_span">
+           <span>KYOTO</span>
+        </div>
+    </article>
+
+    <article class="venise">
+        <div class="venise_div">
+          <a href="#"></a>
+        </div>
+        <div class="venise_span">
+            <span>VENISE</span>
+        </div>
+     </article>
+
+     <article class="paris">
+        <div class="paris_div">
+          <a href="#"></a>
+        </div>
+        <div class="paris_span">
+            <span>PARIS</span>
+        </div>
+     </article>
+
+     <article class="byblos">
+        <div class="byblos_div">
+          <a href="#"></a>
+        </div>
+        <div class="byblos_span">
+            <span>BYBLOS</span>
+        </div>
+     </article>
+ </section>
+
+
+
+ <!-- pc 리미티드 -->
+
+<section class="pc_litesection cf">
+    <h3>LIMITED EDITIONS</h3>
+    <article class="pc_lite">
+       <div class="pc_lite_div">
+         <a href="#"></a>
+       </div>
+       <div class="pc_lite_span">
+        <span>Le Grand<br>Tour</span>
+     </div>
+    </article>
+
+  <section class="pc_piece cf">
+   <article class="pc_kyoto">
+      <div class="pc_kyoto_div">
+        <a href="#"></a>
+      </div>
+      <div class="pc_kyoto_span">
+          <span>KYOTO</span>
+          </div>
+   </article>
+
+   <article class="pc_venise">
+       <div class="pc_venise_div">
+         <a href="#"></a>
+       </div>
+       <div class="pc_venise_span">
+           <span>VENISE</span>
+           </div>
+    </article>
+
+    <article class="pc_paris">
+       <div class="pc_paris_div">
+         <a href="#"></a>
+       </div>
+       <div class="pc_paris_span">
+           <span>PARIS</span>
+           </div>
+    </article>
+
+    <article class="pc_byblos">
+       <div class="pc_byblos_div">
+         <a href="#"></a>
+       </div>
+       <div class="pc_byblos_span">
+           <span>BYBLOS</span>
+        </div>
+    </article>
+  </section>
+</section>
+
+ 
+<!-- 슬릭 슬라이더 -->
+ <article id="box" class="best">
+   <div id="banner_wrap" class="best_box">
+     <h3>Best Selling</h3>
+     <ul class="slide_banner best_ul cf">
+         <li class="slick-slide">
+             <a href="#">
+                 <img class="as" src="dipimg/doson_2.png" alt="도손오드퍼퓸">
+                 <span><strong>도손</strong></span>
+                 <span class="me">오 드 퍼퓸</span>
+                 <span class="sm">80.000원</span>
+                </a>
+         </li>
+
+         <li class="slick-slide" >
+            <a href="#">
+                <img src="dipimg/eauroese_hand.png" alt="오로즈핸드크림">
+                <span><strong>오로즈</strong></span>
+                <span class="me">핸드크림</span>
+                <span class="sm">53.000원</span>
+             </a>
+        </li>
+
+        <li class="slick-slide">
+            <a href="#">
+                <img src="dipimg/figuier_can.png" alt="휘기에캔들">
+                <span><strong>휘기에</strong></span>
+                <span class="me">캔들</span>
+                <span class="sm">80.000원</span>
+             </a>
+        </li>
+
+        <li class="slick-slide">
+            <a href="#">
+                <img src="dipimg/philosykos.png" alt="필로시코스솔리드퍼퓸">
+                <span><strong>필로시코스</strong></span>
+                <span class="me">솔리드 퍼퓸</span>
+                <span class="sm">76.000원</span>
+             </a>
+        </li>
+
+        <!-- 이미지만 변경 -->
+        <li class="slick-slide">
+            <a href="#">
+                <img class="as" src="dipimg/doson_2.png" alt="도손오드퍼퓸">
+                <span><strong>도손</strong></span>
+                <span class="me">오 드 퍼퓸</span>
+                <span class="sm">80.000원</span>
+               </a>
+        </li>
+
+        <li class="slick-slide" >
+           <a href="#">
+               <img src="dipimg/eauroese_hand.png" alt="오로즈핸드크림">
+               <span><strong>오로즈</strong></span>
+               <span class="me">핸드크림</span>
+               <span class="sm">53.000원</span>
+            </a>
+       </li>
+
+       <li class="slick-slide">
+           <a href="#">
+               <img src="dipimg/figuier_can.png" alt="휘기에캔들">
+               <span><strong>휘기에</strong></span>
+               <span class="me">캔들</span>
+               <span class="sm">80.000원</span>
+            </a>
+       </li>
+
+       <li class="slick-slide">
+           <a href="#">
+               <img src="dipimg/philosykos.png" alt="필로시코스솔리드퍼퓸">
+               <span><strong>필로시코스</strong></span>
+               <span class="me">솔리드 퍼퓸</span>
+               <span class="sm">76.000원</span>
+            </a>
+       </li>
+     </ul>
+   </div>
+ </article>
+ <!-- 슬릭슬라이더 end -->
+
+
+ <!--모바일 태블릿 공간의 향 -->
+ <article class="place">
+     <div class="place_box">
+         <a href="#">
+           <div class="p wp7"> 
+               <p><span><strong>diptyque</strong></span> 공간에 향을 더하다.</p>
+           </div> 
+           
+           <!-- 태블릿 피시 -->
+           <div class="tp wp2 delay-2s"> 
+            <p><strong>diptyque</strong> 공간에 향을 더하다.</p>
+             </div> 
+        
+             <div class="place_img">
+                  <img src="dipimg/dipyque_text.png" alt="딥디크">
+            </div>
+             <!-- <div class="place_img "></div> -->
+         </a>
+     </div>
+ </article>
+
+<article class="place2">
+ <div class="place_box2 cf">
+    <a class="cf" href="#">
+      <div class="p2 delay-1s wp8"> 
+      <p><span><strong>오플루리엘</strong></span>
+         <span>홈스프레이</span>
+         <span>123.000원</span>
+      </p>
+    </div>
+        <div class="place_img2 ">
+            <img src="dipimg/pluriellu01.png" alt="오플루리엘홈스프레이">
+        </div>
+        <!-- 태블릿 이미지 --> 
+        <div class="taplace_img2 "></div>
+    </a>
+</div>
+</article>
+
+<article class="place3">
+    <div class="place_box3">
+       <a href="#">
+         <div class="p3 wp9"> 
+         <p><span><strong>시트로넬</strong></span>
+            <span>캔들</span>
+            <span>80.000원</span>
+         </p>
+       </div>
+           <div class="place_img3">
+               <img src="dipimg/citronelle.jpg" alt="시트로넬 캔들">
+           </div>
+           <!-- 태블릿 이미지 -->
+           <div class="taplace_img3"></div>
+       </a>
+   </div>
+   </article>
+
+
+
+<!--pc 공간의 향 -->
+<section class="pc_place_section">
+
+    <div class="pc_p wp2 delay-1s"> 
+        <p><strong>diptyque</strong> 공간에 향을 더하다.</p>
+    </div> 
+
+<div class="pc_bigbox"> 
+<article class="pc_place2">
+<div class="pc_place_box2">
+   <a href="#">
+     <div class="pc_p2 delay-2s wp8"> 
+     <p><span><strong>오플루리엘</strong></span>
+        <span>홈스프레이</span>
+        <span>123.000원</span>
+     </p>
+   </div>
+    <div class="pc_place_img2 ">
+        <img src="dipimg/pluriellu01_1000x1440.png" alt="오플루리엘홈스프레이">
+    </div>
+   </a>
+</div>
+</article>
+
+<article class="pc_place">
+    <div class="pc_place_box">
+        <a href="#">
+            <div class="pc_place_img">
+                 <img src="dipimg/dipyque_text_1500x1440.png" alt="딥디크">
+           </div>
+        </a>
+    </div>
+</article>
+
+<article class="pc_place3">
+   <div class="pc_place_box3">
+      <a href="#">
+        <div class="pc_p3 delay-2s wp9"> 
+        <p><span><strong>시트로넬</strong></span>
+           <span>캔들</span>
+           <span>80.000원</span>
+        </p>
+      </div>
+
+     <div class="pc_place_img3">
+        <img src="dipimg/citronelle_1000x1440.png" alt="시트로넬 캔들">
+     </div>
+      </a>
+  </div>
+  </article>
+</div>  
+  </section>
+
+
+
+   <!-- 마지막 배너 -->
+   <article class="en_ar">
+    <div class="en_p  wp10">
+        <p>Delicate & Fresh: <br> Our New Floral Eaux</p>
+    </div>
+       <div class="en_div wp8">
+           <img src="dipimg/end_banner_1700.png" alt="banner">
+       </div>
+   </article>
+
+
+<!-- footer -->
+   <footer>
+       <div class="footer_box cf">
+           <ul class="cf">
+               <li>
+                   <a href="#">온라인 서비스</a>
+                   <span class="endli1"></span>
+                </li>
+               <li>
+                   <a href="#">배송옵션</a>
+                   <span class="endli2"></span>
+                </li>
+               <li>
+                   <a href="#">반품</a>
+                   <span class="endli3"></span>
+                </li>
+               <li>
+                   <a href="#">FAQ</a>
+                   <span class="endli4"></span>
+                </li>
+           </ul>
+       </div>
+       <div class="footer_sns">
+           <ul>
+               <li class="sns_shadow">
+                   <a href="#"><img src="dipimg/sns_instar.png" width="35" height="35" alt="인스타"></a>
+                </li>
+               <li class="sns_shadow">
+                   <a href="#"><img src="dipimg/sns_face.png" width="35" height="35" alt="페이스북"></a>
+                </li>
+               <li class="sns_shadow">
+                   <a href="#"><img src="dipimg/sns_twitter.png" width="35" height="35" alt="트위터"></a>
+                </li>
+           </ul>
+       </div>
+       <div class="footer_logo">
+           <h1><a href="#"><img src="dipimg/dipyque_logo01_200-150.png" alt="logo"></a></h1>
+       </div>
+   </footer>
+
+   <!-- 업버튼 -->
+<!-- <div class="quick_box"> -->
+<div class="quick">
+    <a href="#"> 
+        <img src="dipimg/icon_up_40-40.png" width="35" height="35" alt="화면위로">
+     </a>
+</div>
+<!-- </div> -->
+   
+  
+  </body>
+</html>
